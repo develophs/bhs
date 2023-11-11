@@ -35,5 +35,6 @@ public class UserTest {
 
         //then
         assertThat(user.getStatus()).isEqualTo(UserStatus.INACTIVE);
+        assertThat(user.isActive()).isFalse();
     }
 }
